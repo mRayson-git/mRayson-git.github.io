@@ -9662,6 +9662,10 @@ body {
   font-size: 20px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .content {
   min-height: 100vh;
 }
