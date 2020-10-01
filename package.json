@@ -1,0 +1,23 @@
+{
+  "name": "mrayson-git.github.io",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mRayson-git/mRayson-git.github.io.git"
+  },
+  "author": "Michael Rayson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mRayson-git/mRayson-git.github.io/issues"
+  },
+  "homepage": "https://github.com/mRayson-git/mRayson-git.github.io#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1"
+  }
+}
