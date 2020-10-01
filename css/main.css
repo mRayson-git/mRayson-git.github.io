@@ -9665,4 +9665,8 @@ body {
 .content {
   min-height: 100vh;
 }
+
+.footer {
+  height: 400px;
+}
 /*# sourceMappingURL=main.css.map */
