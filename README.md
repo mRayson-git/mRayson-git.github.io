@@ -1,2 +1,2 @@
 # mRayson-git.github.io
-Personal Website
+Personal digital portfolio to help display my projects and mess around with Sass and Bootstrap.
