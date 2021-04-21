@@ -8,10 +8,62 @@
     <title>Cheeky Gal</title>
 </head>
 <body>
-    <div class="container text-center">
-        <h1 class="display-1 text-primary">Smh my head</h1>
-        <p>Gotta wait to open this note, mwah</p>
+    <div class="container mt-5 jumbotron" id="countDownContainer">
+        <h1 class="display-4 text-primary text-center">Note Unlocks in:</h1>
+        <h1 class="display-4 text-primary text-center" id="countDown"></h1>
+        <h1 class="display-4 text-primary text-center">Love you!</h1>
+    </div>
+    
+    <div class="container" id="message" style="display: none;">
+        <hr class="hr">
+        <p class="text-right">April 21, 2021</p>
+        <p>Dear sweetheart,</p>
+        <p>
+            It's finally happened, the stress of exams is over! On top of that you get to see me pretty darn soon as well!
+            Now I know that this term did not go exactly as you planned, but I want you to know that I'm so proud of you and feel so 
+            lucky to be your boyfriend. Nothing goes exactly as we plan but you trucked on through and now you're just one step away 
+            from getting that degree ;P.
+        </p>
+        <p>
+            If only Douggy was not so adamant on keeping us apart, this would be the perfect time for us to get some quality time together.
+            I'm almost done work - in fact by the time you read this message I'll have completed my final sprint review meeting and won't have
+            to deal with those gosh darn presentations anymore - and you are free from school, we've got so much free time and yet we're still 
+            gonna be trapped in our homes :/. It's proper sad boi hours.
+        </p>
+        <p>
+            Enough sad boi talk though! Even though Douggy may try, you'll be coming by to scoop me up and away we
+            shall go on an adventure to the ol guelph. We'll get a good couple of days together before the proper lockdown happens and I'm looking
+            forward to every second of it :). While this pandemic sure has been shitty, I'm kinda glad you were able to come back here and do school
+            online since we really have been able to see so much more of each other than we otherwise would have. Always gotta look on the bright side ;P
+        </p>
         <p class="fw-light">Enjoy your flowers & goodluck on your exams!</p>
     </div>
 </body>
+<script>     
+    let countDownDate = new Date(2021, 3, 21, 12).getTime();
+    console.log(new Date(2021,3,21));
+    let x = setInterval(() => {
+        let now = new Date().getTime(); 
+
+        // Find the distance between now and the count down date
+        let distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("countDown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countDownContainer").style.display="None";
+            document.getElementById("message").style.display="block";
+        }
+    }, 1000);
+    
+</script>
 </html>
