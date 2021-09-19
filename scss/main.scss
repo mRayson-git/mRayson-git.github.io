@@ -1,34 +1,5 @@
 //put bootstrap overrides above the bootstrap import
 
 //variable overrides
-$secondary: #ffb515;
-$dark: grey;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    min-height: 60px;
-    z-index: 100;
-}
-
-.opener {
-    height: 100vh;
-}
-
-body {
-    font-size: 20px;
-}
-html {
-    scroll-behavior: smooth;
-}
-
-.content {
-    min-height: 100vh;
-}
-
-.footer {
-    height: 400px;
-}

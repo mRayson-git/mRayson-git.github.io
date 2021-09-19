@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/mRayson-git/mRayson-git.github.io#readme",
   "dependencies": {
-    "bootstrap": "^4.5.2",
+    "bootstrap": "^5.1.1",
     "jquery": "^3.5.1"
   }
 }
